@@ -1,0 +1,192 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+font-family: 'Poppins', sans-serif;
+/*max-width: 1200px;*/
+}
+
+h2{
+	font-size: 3em;
+	padding: 5px 15px 2px 15px;
+ 	margin: 10px 15px 20px 15px;
+}
+
+.borderimit{
+	width: 50px;
+	border: 4px solid black;
+}
+
+nav{
+ background-color: rgb(41,41,49); 
+ color: white;
+ box-shadow: 
+ 0 2px 5px 0 rgba(0,0,0,0.16), 
+ 0 10px 10px 0 rgba(0,0,0,0.12);
+
+}
+
+nav ul{
+	text-align: center;
+
+}
+
+nav li{
+	 list-style-type: none;
+	  display: inline;
+
+}
+
+nav li a{
+	display: inline-block;
+ 	padding: 20px 30px;
+ 	text-decoration: none;
+ 	color: white;
+ 	font-size: 1.1em;
+}
+
+nav li a:hover{
+color: rgba(255,255,255,.6);
+}
+
+img[src*="waterfall"]{
+	width: 15%;
+	height:1251px;
+}
+
+.img_header_right{
+/*	position: absolute;*/
+	float: right;
+	padding-left: 50px;
+	clear: right;
+	background-attachment: fixed;
+} 
+
+.img_header_left{
+
+	float: left;
+	padding-right: 50px;
+	clear: left;
+
+
+} 
+ .container_icons{
+ 		display: flex;
+ 		justify-content: space-between;
+ 		margin-top: 10px;
+ }
+
+.container_icons figure{
+	justify-content: row;
+	width: 33%;
+	background-color: #f1f1f1; 
+	text-align: center; 
+}
+
+.container_icons figure:hover{
+ background-color: rgb(20,210,210);
+}
+
+.qualification-list{
+	display: flex;
+	align-items: center;
+
+}
+
+.qualification-list__termin{
+	width: 40%;
+	border-right: 4px solid rgb(41,41,49);
+	padding:0 15px 0 15px;
+	
+}
+
+.qualification-list__determination{
+	padding:0 30px 0 30px;
+}
+
+.paragraph_main{
+	line-height: 2em;
+	font-size: 1.1em;
+}
+
+.itinerary-days{
+    text-align: left;
+}
+
+.itinerary-title{
+	text-align: right;
+}
+
+.itinerary-list__item{
+	display: flex;
+	justify-content: space-between;
+	padding: 20px;
+	background-color: #f1f1f1;
+	list-style-type: none;
+}
+
+.itinerary-list__item:hover{
+	background-color: white;
+}
+
+.container_books{
+	display: flex;
+	text-align: center;
+	background-color: #f1f1f1; 
+	padding: 10px;
+}
+
+.book{
+	padding: 10px;	
+}
+
+.footer,
+.registration{
+	background-color: rgb(41,41,49);
+	 color: white;
+	  box-shadow: 
+ 0 2px 5px 0 rgba(0,0,0,0.16), 
+ 0 10px 10px 0 rgba(0,0,0,0.12);
+ text-align: center;
+
+}
+
+
+.link_contact{
+	color: white;
+}
+
+button{
+	background-color: rgba(41,41,49);
+	border: none;
+	padding: 9px;
+	color: white;
+	text-transform: uppercase; 
+}
+
+button:hover{
+	background-color: white;
+	color:  rgb(41,41,49);
+	border-right: 2px solid rgb(41,41,49) ;
+	border-left:2px solid rgb(41,41,49) ; 
+}
+
+@media screen and (max-width: 1010px){
+	.img_header_right,
+	.img_header_left{
+		display: none;
+	}
+}
+
+@media screen and (max-width: 1350px) {
+	nav li a{
+		padding: 20px 10px;
+		font-size: .9em;
+	}
+	img[src*="waterfall"]{
+		height: 1429;
+	}
+
+}
