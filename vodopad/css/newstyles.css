@@ -1,0 +1,189 @@
+body{
+	margin: 0 auto;
+/*	max-width: 1200px;*/
+	font-family: 'Poppins', sans-serif;
+	line-height: normal;
+	background-color: rgb(250,250,250);
+}
+img[src*="waterfall"]{
+	width: 17%;
+	height:1278px;
+}
+.img_header_right{
+	float: right;
+	padding-left: 50px;
+	clear: right;
+} 
+
+.img_header_left{
+
+	float: left;
+	padding-right: 50px;
+	clear: left;
+} 
+
+p{
+	font-weight: 300;
+}
+
+nav{
+	background-color: rgb(41,41,49); 
+	color: white;
+ 	box-shadow: 
+ 	0 2px 5px 0 rgba(0,0,0,0.16), 
+ 	0 10px 10px 0 rgba(0,0,0,0.12);
+}
+
+h2{
+	font-size: 3em;
+	padding: 5px 15px 2px 15px;
+ 	margin: 10px 15px 20px 15px;
+ 	text-align: center;
+}
+
+.paragraph_main{
+	line-height: 2em;
+	font-size: 1em;
+}
+
+nav ul{
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+	padding: 15px 0 15px 0;
+}
+
+nav li{
+	list-style-type: none;
+
+}
+
+nav li a{
+	text-decoration: none;
+	color: white;
+	font-size: 0.9em;
+}
+
+nav li a:hover{
+color: rgba(255,255,255,.6);
+transition-timing-function: linear;
+transition-duration: 0.2s;
+}
+
+.container_icons{
+	display: flex;
+	justify-content: space-around;
+	margin: 10px 0 10px 0;
+}
+
+.container_icons figure{
+	flex:1;
+	text-align: center; 
+	background-color: #f1f1f1; 
+}
+
+.container_icons figure:nth-of-type(1n+2) {
+	 margin-left: 5px;
+}
+
+.container_icons figure:hover{
+	background-color:  rgba(225,225,225);
+	transition-timing-function: linear;
+	transition-duration: 0.2s;
+}
+
+.qualification-list{
+	display: flex;
+		align-items: center;
+}
+
+.qualification-list__termin{
+	width: 40%;
+	border-right: 4px solid rgb(41,41,49);
+	padding:0 15px 0 15px;
+}
+
+.qualification-list__determination{
+	padding:0 30px 0 30px;
+}
+
+#qualification .paragraph_main{
+ 	text-align: center;
+}
+
+#qualification{
+	background-color: rgb(240,240,240);
+	padding-bottom: 30px;
+	padding-top: 30px;
+}
+
+#itinerary{
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+.itinerary-days{
+    text-align: left;
+}
+
+.itinerary-title{
+	text-align: right;
+}
+
+.itinerary-list__item{
+	display: flex;
+	justify-content: space-between;
+	padding: 20px;
+	background-color: #f1f1f1;
+	list-style-type: none;
+}
+
+.itinerary-list__item:hover{
+	background-color: rgba(225,225,225);
+		transition-timing-function: linear;
+	transition-duration: 0.2s;
+}
+
+.container_books{
+	display: flex;
+	justify-content: space-around;
+	margin: 10px 0 10px 0;
+}
+
+.container_books article{
+	flex:1;
+	text-align: center; 
+	background-color: #f1f1f1; 
+}
+
+.container_books article:nth-of-type(1n+2) {
+	 margin-left: 5px;
+}
+
+.container_books article:hover{
+	background-color:  rgba(225,225,225);
+	transition-timing-function: linear;
+	transition-duration: 0.2s;
+}
+
+.footer,
+.registration{
+	background-color: rgb(41,41,49);
+	color: white;
+	box-shadow: 
+		0 2px 5px 0 rgba(0,0,0,0.16), 
+		0 10px 10px 0 rgba(0,0,0,0.12);
+ 	text-align: center;
+}
+
+.link_contact{
+	color: white;
+}
+
+button{
+	background-color: rgba(41,41,49);
+	border: none;
+	padding: 9px;
+	color: white;
+	text-transform: uppercase; 
+}
