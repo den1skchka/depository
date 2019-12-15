@@ -16,21 +16,21 @@ public class StudentServiceImp implements StudentService{
 
     @Override
     public Student listId(int id) {
-        return null;
+        throw new UnsupportedOperationException("Not supported yet");
     }
 
     @Override
     public Student add(Student s) {
-        return null;
+        throw new UnsupportedOperationException("Not supported yet");
     }
 
     @Override
     public Student edit(Student s) {
-        return null;
+        throw new UnsupportedOperationException("Not supported yet");
     }
 
     @Override
     public Student delete(int id) {
-        return null;
+        throw new UnsupportedOperationException("Not supported yet");
     }
 }
