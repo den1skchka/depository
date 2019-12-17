@@ -15,9 +15,13 @@ export class ListComponent implements OnInit {
   constructor(private service:ServiceService, private router:Router) { }
 
   ngOnInit() {
-    this.service.gerStudent().subscribe(data=>{
+    this.service.getStudent().subscribe(data=>{
       this.students=data;
     })
+  }
+  Edit(student:Student):void{
+    localStorage.setItem("id",student.id.toString());
+    this.router.navigate(["edit"])
   }
 
 }

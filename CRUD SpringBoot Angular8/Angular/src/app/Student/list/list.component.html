@@ -20,7 +20,7 @@
                         <td>{{student.surname}}</td>
                         <td>{{student.grade}}</td>
                         <td>
-                            <button class="btn btn-warning">Edit</button>
+                            <button (click)="Edit(student)" class="btn btn-warning">Edit</button>
                             <button class="btn btn-danger">Delete</button>
                         </td>
                     </tr>

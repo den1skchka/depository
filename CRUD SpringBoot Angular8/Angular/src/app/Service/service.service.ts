@@ -12,7 +12,16 @@ export class ServiceService {
 
   Url='http://localhost:8080/project1/students'
 
-  gerStudent(){
+  getStudent(){
     return this.http.get<Student[]>(this.Url);
+  }
+  createStudent(student:Student){
+    return this.http.post<Student>(this.Url,student)
+  }
+  getStudentId(id:number){
+    return this.http.get<Student>(this.Url+"/"+id);
+  }
+  updateStudent(student:Student){
+    return this.http.put<Student>(this.Url+"/"+student.id,student);
   }
 }

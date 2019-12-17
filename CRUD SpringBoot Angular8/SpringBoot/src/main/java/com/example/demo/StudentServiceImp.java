@@ -16,17 +16,16 @@ public class StudentServiceImp implements StudentService{
 
     @Override
     public Student listId(int id) {
-        throw new UnsupportedOperationException("Not supported yet");
+        return repository.findOne(id);
     }
 
     @Override
     public Student add(Student s) {
-        throw new UnsupportedOperationException("Not supported yet");
+        return repository.save(s);
     }
-
     @Override
     public Student edit(Student s) {
-        throw new UnsupportedOperationException("Not supported yet");
+        return repository.save(s);
     }
 
     @Override
