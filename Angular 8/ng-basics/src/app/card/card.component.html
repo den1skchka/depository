@@ -1,0 +1,29 @@
+<div class="card">
+
+<!-- <div>
+    <img [src]="imgUrl" alt=""> binding
+</div>     -->
+
+<h2 [ngStyle]="{
+    color: title.length <= 5 ? 'black' : 'red'}">
+    {{ title }}</h2>  <!----interpolation-->
+<p>{{ text }}</p>
+<!-- <strong>Number: {{ number }}</strong>
+<p><em>{{array}}</em></p>
+<pre>{{obj | json}}</pre> -->
+
+<!-- <button [disabled]="buttonDontWork">{{buttonName}}</button> -->
+<div class="buttons">
+    <button (click)="changeTitle()">Change title</button>
+    <button (click)="title = 'Inline title'">Change title inline</button>
+</div>
+
+<!-- <div>
+    <input type="text" #myInput (input)="inputHandler(myInput.value)" [value] = "title">
+</div> -->
+
+<div>
+        <input type="text" [(ngModel)]="title">
+</div>
+
+</div>
